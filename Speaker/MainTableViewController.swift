@@ -32,7 +32,8 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
         self.tableView.registerClass(TableViewCellTextField.classForCoder(), forCellReuseIdentifier:"cellTextField")
-        self.tableView.registerClass(TableViewCellWithTwoButtons.classForCoder(), forCellReuseIdentifier:"cellButton")
+        //self.tableView.registerClass(TableViewCellWithTwoButtons.classForCoder(), forCellReuseIdentifier:"cellButton")
+        self.tableView.registerClass(TableViewCellWithThreeButtons.classForCoder(), forCellReuseIdentifier:"cellButton")
         
         self.title = "Speaker"
         
@@ -84,6 +85,8 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
     override func viewDidAppear(animated: Bool) {
         self.sendData()
         
+        self.tableView.reloadData()
+        
         super.viewDidAppear(animated)
     }
     
@@ -125,7 +128,7 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
         self.view.endEditing(true)
     }
     
-    private func getNumberOfFavoris() -> Int
+    internal func getNumberOfFavoris() -> Int
     {
         return self.sauvegarde.integerForKey("NumberOfFavoris")
     }
@@ -247,6 +250,17 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
         self.speak(message["data"] as! String)
     }
     
+    internal func moveItemAtIndexToIndice(index: Int, indice: Int)
+    {
+        let item = self.sauvegarde.stringForKey("Favoris" + String(index))
+        
+        self.sauvegarde.setObject(self.sauvegarde.stringForKey("Favoris" + String(indice)), forKey:"Favoris" + String(index))
+        self.sauvegarde.setObject(item, forKey:"Favoris" + String(indice))
+        
+        self.sauvegarde.synchronize()
+        self.tableView.reloadData()
+    }
+    
     // MARK: - Table view data source
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -278,7 +292,7 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
             
             return cell
         }
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellButton", forIndexPath: indexPath) as! TableViewCellWithTwoButtons
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellButton", forIndexPath: indexPath) as! TableViewCellWithThreeButtons
 
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         
