@@ -53,17 +53,20 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     {
         self.table.setNumberOfRows(self.sauvegarde.integerForKey("numberOfItems") + 2, withRowType:"row")
         
-        let firstRow = self.table.rowControllerAtIndex(0) as! TextRow
+        let firstRow = self.table.rowControllerAtIndex(0) as! ImageTextRow
+        firstRow.image.setImage(UIImage(named:NSLocalizedString("ICON_REFRESH", comment:"")))
         firstRow.label.setText("Refresh")
         
-        let secondRow = self.table.rowControllerAtIndex(1) as! TextRow
+        let secondRow = self.table.rowControllerAtIndex(1) as! ImageTextRow
         secondRow.label.setText(self.sauvegarde.stringForKey("language"))
+        secondRow.image.setImage(UIImage(named:NSLocalizedString("ICON_LANGUAGE", comment:"")))
         
         var i = 0
         while (i < self.sauvegarde.integerForKey("numberOfItems"))
         {
-            let row = self.table.rowControllerAtIndex(i + 2) as! TextRow
+            let row = self.table.rowControllerAtIndex(i + 2) as! ImageTextRow
             row.label.setText(self.sauvegarde.stringForKey("titleOfItemN°" + String(i)))
+            row.image.setImage(UIImage(named:NSLocalizedString("ICON_SPEAK", comment:"")))
             i += 1
         }
     }

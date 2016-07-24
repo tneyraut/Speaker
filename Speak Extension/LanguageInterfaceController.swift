@@ -26,7 +26,8 @@ class LanguageInterfaceController: WKInterfaceController {
         var i = 0
         while (i < self.languagesArray.count)
         {
-            let row = self.table.rowControllerAtIndex(i) as! TextRow
+            let row = self.table.rowControllerAtIndex(i) as! ImageTextRow
+            row.image.setImage(UIImage(named:NSLocalizedString("ICON_LANGUAGE", comment:"")))
             row.label.setText(String(self.languagesArray[i]))
             i += 1
         }

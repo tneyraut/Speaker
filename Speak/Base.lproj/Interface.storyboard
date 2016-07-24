@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
@@ -12,14 +12,16 @@
                     <items>
                         <table alignment="left" id="jFC-Ae-5YD">
                             <items>
-                                <tableRow identifier="row" id="7Ab-Wf-AfR" customClass="TextRow" customModule="Speak_Extension">
+                                <tableRow identifier="row" id="7Ab-Wf-AfR" customClass="ImageTextRow" customModule="Speak_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="sPX-ma-FyL">
                                         <items>
-                                            <label width="136" height="54.5" alignment="left" text="Label" id="9Uh-Cn-16d"/>
+                                            <imageView width="40" height="1" alignment="left" id="dYw-if-386"/>
+                                            <label width="80" height="1" alignment="left" text="Label" numberOfLines="5" id="VCa-IV-KlK"/>
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="label" destination="9Uh-Cn-16d" id="rrD-sv-CpS"/>
+                                        <outlet property="image" destination="dYw-if-386" id="28O-RZ-0SI"/>
+                                        <outlet property="label" destination="VCa-IV-KlK" id="tQq-uh-PcS"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -39,14 +41,16 @@
                     <items>
                         <table alignment="left" id="LIy-be-VuW">
                             <items>
-                                <tableRow identifier="row" id="JpV-3c-LCu" customClass="TextRow" customModule="Speak_Extension">
+                                <tableRow identifier="row" id="JpV-3c-LCu" customClass="ImageTextRow" customModule="Speak_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="S4v-p1-RXc">
                                         <items>
-                                            <label width="136" height="57.5" alignment="left" text="Label" id="70U-QJ-7ZF"/>
+                                            <imageView width="40" height="1" alignment="left" id="uYD-8b-Zdk"/>
+                                            <label width="80" height="1" alignment="left" text="Label" numberOfLines="5" id="nqO-D9-c1U"/>
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="label" destination="70U-QJ-7ZF" id="NDN-ye-nfH"/>
+                                        <outlet property="image" destination="uYD-8b-Zdk" id="wnf-ng-qqY"/>
+                                        <outlet property="label" destination="nqO-D9-c1U" id="9nd-nG-A2u"/>
                                     </connections>
                                 </tableRow>
                             </items>

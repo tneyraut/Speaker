@@ -16,9 +16,10 @@
 		E80A43EC1D1D0BAB0013414C /* SpeakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A43EB1D1D0BAB0013414C /* SpeakerUITests.swift */; };
 		E80A43FA1D1D0C110013414C /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A43F91D1D0C110013414C /* MainTableViewController.swift */; };
 		E80A43FD1D1D0D470013414C /* TableViewCellTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A43FB1D1D0D470013414C /* TableViewCellTextField.swift */; };
-		E80A44001D1D5DDA0013414C /* TableViewCellWithTwoButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A43FF1D1D5DDA0013414C /* TableViewCellWithTwoButtons.swift */; };
+		E824BC451D44C99700647588 /* ImageTextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E824BC441D44C99700647588 /* ImageTextRow.swift */; };
+		E84DFD361D44D33A00F59F46 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E84DFD351D44D33A00F59F46 /* Localizable.strings */; };
 		E86BA4791D3556E400C97121 /* LanguageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BA4781D3556E400C97121 /* LanguageInterfaceController.swift */; };
-		E875C65A1D313F3F0068C0BE /* TextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E875C6591D313F3F0068C0BE /* TextRow.swift */; };
+		E89FE15E1D3B9366003E77A0 /* TableViewCellWithThreeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89FE15D1D3B9366003E77A0 /* TableViewCellWithThreeButtons.swift */; };
 		E8AEB6A91D30041300FF5764 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8AEB6A71D30041300FF5764 /* Interface.storyboard */; };
 		E8AEB6AB1D30041300FF5764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8AEB6AA1D30041300FF5764 /* Assets.xcassets */; };
 		E8AEB6B21D30041300FF5764 /* Speak Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8AEB6B11D30041300FF5764 /* Speak Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -101,9 +102,10 @@
 		E80A43ED1D1D0BAB0013414C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E80A43F91D1D0C110013414C /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		E80A43FB1D1D0D470013414C /* TableViewCellTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellTextField.swift; sourceTree = "<group>"; };
-		E80A43FF1D1D5DDA0013414C /* TableViewCellWithTwoButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellWithTwoButtons.swift; sourceTree = "<group>"; };
+		E824BC441D44C99700647588 /* ImageTextRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTextRow.swift; sourceTree = "<group>"; };
+		E84DFD351D44D33A00F59F46 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E86BA4781D3556E400C97121 /* LanguageInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageInterfaceController.swift; sourceTree = "<group>"; };
-		E875C6591D313F3F0068C0BE /* TextRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRow.swift; sourceTree = "<group>"; };
+		E89FE15D1D3B9366003E77A0 /* TableViewCellWithThreeButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellWithThreeButtons.swift; sourceTree = "<group>"; };
 		E8AEB6A51D30041300FF5764 /* Speak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8AEB6A81D30041300FF5764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		E8AEB6AA1D30041300FF5764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,7 +181,7 @@
 				E80A43C81D1D0BAB0013414C /* AppDelegate.swift */,
 				E80A43F91D1D0C110013414C /* MainTableViewController.swift */,
 				E80A43FB1D1D0D470013414C /* TableViewCellTextField.swift */,
-				E80A43FF1D1D5DDA0013414C /* TableViewCellWithTwoButtons.swift */,
+				E89FE15D1D3B9366003E77A0 /* TableViewCellWithThreeButtons.swift */,
 				E80A43CC1D1D0BAB0013414C /* Main.storyboard */,
 				E80A43D21D1D0BAB0013414C /* Assets.xcassets */,
 				E80A43D41D1D0BAB0013414C /* LaunchScreen.storyboard */,
@@ -224,7 +226,8 @@
 				E86BA4781D3556E400C97121 /* LanguageInterfaceController.swift */,
 				E8AEB6BA1D30041300FF5764 /* ExtensionDelegate.swift */,
 				E8AEB6BC1D30041300FF5764 /* NotificationController.swift */,
-				E875C6591D313F3F0068C0BE /* TextRow.swift */,
+				E824BC441D44C99700647588 /* ImageTextRow.swift */,
+				E84DFD351D44D33A00F59F46 /* Localizable.strings */,
 				E8AEB6BE1D30041300FF5764 /* Assets.xcassets */,
 				E8AEB6C01D30041300FF5764 /* Info.plist */,
 				E8AEB6B61D30041300FF5764 /* Supporting Files */,
@@ -430,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8AEB6BF1D30041300FF5764 /* Assets.xcassets in Resources */,
+				E84DFD361D44D33A00F59F46 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,10 +444,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E80A44001D1D5DDA0013414C /* TableViewCellWithTwoButtons.swift in Sources */,
 				E80A43D11D1D0BAB0013414C /* Speaker.xcdatamodeld in Sources */,
 				E80A43FA1D1D0C110013414C /* MainTableViewController.swift in Sources */,
 				E80A43C91D1D0BAB0013414C /* AppDelegate.swift in Sources */,
+				E89FE15E1D3B9366003E77A0 /* TableViewCellWithThreeButtons.swift in Sources */,
 				E80A43FD1D1D0D470013414C /* TableViewCellTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,10 +473,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8AEB6BD1D30041300FF5764 /* NotificationController.swift in Sources */,
-				E875C65A1D313F3F0068C0BE /* TextRow.swift in Sources */,
 				E8AEB6BB1D30041300FF5764 /* ExtensionDelegate.swift in Sources */,
 				E8AEB6B91D30041300FF5764 /* InterfaceController.swift in Sources */,
 				E86BA4791D3556E400C97121 /* LanguageInterfaceController.swift in Sources */,
+				E824BC451D44C99700647588 /* ImageTextRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
